@@ -5,5 +5,20 @@ h1 {
 
 body {
 
-    background-color: #0c37e1; 
+    background-color: #260edf; 
+}
+header {
+    background-color: #260edf;
+    text-align: center;
+}
+main {
+    width: 80%;
+    margin: auto;
+}
+footer {
+    background-color: #260edf;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
