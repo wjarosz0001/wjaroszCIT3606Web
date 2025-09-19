@@ -6,9 +6,43 @@
         <link href="style.css" rel="stylesheet" type="text/css" />
     </head>
     <body>
-      
-      
+        <script>
 
-        
+            var today = new Date();
+            var hour = today.getHours();
+            var message;
+
+            if (hour < 12) {
+                message = "Good morning!";
+            } else if (hour < 18) {
+                message = "Good afternoon!";
+            } else {
+                message = "Good evening!";
+            }
+
+            alert(message);
+
+
+            //I added input validation and a while loop 
+
+            dollarAmount = isNaN
+
+            while (isNaN(dollarAmount) || isnull(dollarAmount)) {
+                dollarAmount = parseFloat(window.prompt("Please enter a valid dollar amount to convert to Euros:"));
+
+                if (isNaN(dollarAmount) || dollarAmount === null) {
+                    alert("Invalid input. Please enter a numeric value.");
+                }
+                else {
+                    break;
+                }
+            }
+
+            var euroRate = 0.85;
+            var euroAmount = (dollarAmount * euroRate).toFixed(2);
+
+            alert("$" + dollarAmount + " is approximately €" + euroAmount + " in euros.");
+
+        </script>
     </body>
 </html>
