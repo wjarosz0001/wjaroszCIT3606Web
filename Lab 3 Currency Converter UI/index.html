@@ -2,11 +2,22 @@
 <html>
     <head>
         <meta name="viewport" content="width=device-width">
-        <title>CIT 3606 Lab 3 Currency Converter</title>
+        <title>CIT 3606 Lab 3 Currency Converter V2 GUI</title>
         <link href="style.css" rel="stylesheet" type="text/css" />
     </head>
     <body>
-      <!-- Add UI for Currency Converter -->
+          <h2>Currency Converter V2 GUI</h2>
+
+            <!-- Dollar textbox-->
+            <label for="dollarInput">Enter amount in USD:</label>
+            <input type="text" id="dollarTextbox" placeholder="e.g. 100"><br><br>
+
+            <!-- Euro textbox -->
+            <label for="euroOutput">Enter mount in EUR:</label>
+            <input type="text" id="euroTextbox" placeholder="e.g. 100" ><br><br>
+
+            <!-- Button to call function and convert -->
+            <button onclick="convert()">Convert</button>
 
       
       <!-- The JavaScript code is attached at the bottom of the page
