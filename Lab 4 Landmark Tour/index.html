@@ -1,15 +1,71 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta name="viewport" content="width=device-width">
-        <title>CIT 3606 Lab 4</title>
-        <link href="style.css" rel="stylesheet" type="text/css" />
-    </head>
-    <body>
-      
-      
-     <!-- The JavaScript code is attached at the bottom of the page
-           after the page is completely loaded. Write your code in script.js. -->
-     <script src="script.js"></script> 
-    </body>
+<head>
+  <meta name="viewport" content="width=device-width">
+  <title>CIT 3606 Lab 4</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+  <h2 style="text-align:center; font-weight:bold;">Famous Landmarks</h2>
+
+  <div style="text-align:center;"> 
+    <img id="landmark" src="Landmarks/landmarksimage.jpg" alt="Landmark" width="800">
+
+    <iframe 
+      id="mapFrame"
+      src="https://www.google.com/maps/embed?pb=DEFAULT_URL_HERE"
+      width="800" 
+      height="400"
+      style="border:0;"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+
+    <br><br>
+    <div id="description" style="font-weight:bold;"></div>
+
+    <br>
+
+    <label>
+      <input type="radio" name="landmark" 
+        onclick="changeLandmark(
+          'Landmarks/gobeklitepe.jpg',
+          'Göbeklitepe is an ancient archaeological site in southeastern Turkey, dating back to around 9600 BCE. This means it belonged to the Neolithic period around 11,600 years before today.',
+          'gobeklitepe')">
+      Gobeklitepe
+    </label>
+
+    <label>
+      <input type="radio" name="landmark" 
+        onclick="changeLandmark(
+          'Landmarks/viewofmtfuji.jpeg',
+          'Mt Fuji became the first ski site in Japan in 1911, when Austrian soldiers, Major Theodore Edler von Lerch and Egon Edler von Kratzer skied down from the 9th stage. Today, there is still a plaque on the 5th stage of Mt Fuji commemorating this event.',
+          'fuji')">
+      Mt Fuji
+    </label>
+
+    <label>
+      <input type="radio" name="landmark" 
+        onclick="changeLandmark(
+          'Landmarks/tajmahal.webp',
+          'The Taj Mahal isn’t just a monument—it’s a story carved in white marble, standing as a timeless tribute to love, art, and architectural brilliance. Built in the 17th century by Mughal Emperor Shah Jahan, it stands as a tribute to his beloved wife, Mumtaz Mahal.',
+          'tajmahal')">
+      Taj Mahal
+    </label>
+
+    <br><br>
+
+    <select id="sizeMenu" onchange="resizeImage()">
+      <option value="">-- Select Size --</option>
+      <option value="small">Small</option>
+      <option value="medium">Medium</option>
+      <option value="large">Large</option>
+    </select>
+
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
 </html>
