@@ -9,8 +9,8 @@ let dogY = Math.random() * (canvas.height - 100);
 let gatorX = Math.random() * (canvas.width - 100);
 let gatorY = Math.random() * (canvas.height - 100);
 
-myDog.src = "./Dog.png";
-badGator.src = "./Alligator.png";
+myDog.src = "./Images/Dog.png";
+badGator.src = "./Images/Alligator.png";
 
 
 function drawFunction() {
