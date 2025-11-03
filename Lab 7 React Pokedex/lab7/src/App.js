@@ -1,24 +1,27 @@
 import logo from './logo.svg';
 import './App.css';
 
+function PokemonCard(props) {
+  return (
+    <div>
+      <br/>
+      <h2>{props.name}</h2>
+      <img src={props.image} alt={props.name} width="150" />
+      <p>{props.type}</p>
+    </div>
+  );
+}
+
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <h1>My Pokedex</h1>
+
+      <PokemonCard name="Pikachu" image="/images/Pika.jpg" type="Electric" />
+      <PokemonCard name="Charmander" image="./images/Char.png" type="Fire" />
+      <PokemonCard name="Bulbasaur" image="./images/bulb.jpg" type="Grass/Poison" />
+      <PokemonCard name="Squirtle" image="./images/squirtle.jpg" type="Water" />
+    </>
   );
 }
 
